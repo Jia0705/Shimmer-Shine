@@ -1,0 +1,185 @@
+@import url("footer.css");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top,#373333,#747070);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.haish{
+    background:#4DB9F5;
+    min-height: 80vh;
+    width:60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.4));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    justify-content: center;
+        
+}
+.roundcircle1,
+.roundcircle2{
+    background:white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,1),rgba(255,255,255,0.5)); 
+    height: 15rem;
+    width: 15rem;
+    position:absolute;
+    border-radius: 50%;
+}
+.roundcircle1{
+    top: 5%;
+    right: 15%;
+}
+.roundcircle2{
+    Bottom: 5%;
+    left: 15%;
+}
+.status{
+    padding-top: 100px;
+    padding-bottom: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+h2{
+    
+    font-size: 50px;
+    padding-bottom: 1em;
+    text-align:left;
+    font-family: monospace;
+    color: black;
+    width: 600px;
+    border-radius: 10px;
+}
+
+
+p{
+    font-size: 30px; 
+}
+.button{
+    margin-top:-19%;
+    margin-left:35%;
+    padding-top: 3px;
+    font-size: 25px;
+    font-family: monospace;
+    text-align: center;
+    background: rgba(24, 220, 255,1.0);
+    box-shadow: inset 0 0 0 0 lightgreen;
+    display: block;
+    transition: all 0.7s ease 0s ;
+    border-radius: 10px;
+    width: 180px;
+    height: 37px;
+    color: white;  
+}
+.button:hover{
+    cursor: pointer;
+    color:black;
+    box-shadow: inset 250px 0 0 0 lightgreen;
+    background: linear-gradient(to right top,rgba(254, 202, 87,1.0),rgba(255, 159, 67,1.0));
+}
+.payment{
+    font-family: Arial, sans-serif;
+    background-color: #a8e3be;
+    margin: 0;
+
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+#paymentForm {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#paymentSummary {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#summaryCardNumber, #summaryExpiryDate, #summaryCVV {
+    font-weight: bold;
+}
+
+/* Style the header */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #818181;
+    font-weight: bold;
+}
+
+p{
+    font-family:monospace;
+    font-size: 1.8em;
+}

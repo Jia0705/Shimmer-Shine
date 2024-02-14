@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="payment.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>Payment Page</title>
+
+</head>
+
+<body>
+
+  
+
+  <header style="color: white;background-color:#24262b;">
+
+    <h1>Welcome to Shimmer Shine</h1>
+    <nav>
+      <ul>
+        <li><a href="jewelpage.html">Home</a></li>
+        <li><a href="jewelproduct.html">Products</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="tandco.html">Terms and Conditions</a></li>
+        <li><a href="faq.html">FAQ</Q></a></li>
+
+
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <div class="payment">
+    <h1 style="color: black;">Payment Page</h1>
+    <form id="paymentForm" action="End.html" method="">
+      <label for="cardNumber">Credit Card Number:</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter card number" required>
+      <br>
+      <label for="expiryDate">Expiry Date:</label>
+      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+      <br>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+      <br>
+      <button type="button" id="submitPayment">Submit Payment</button>
+    </form>
+
+    <div id="paymentSummary" style="display: none;">
+      <h2>Payment Summary</h2>
+      <p>Card Number: <span id="summaryCardNumber"></span></p>
+      <p>Expiry Date: <span id="summaryExpiryDate"></span></p>
+      <p>CVV: <span id="summaryCVV"></span></p>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="about us.html">about us</a></li>
+            <li><a href="costomize.html">our services</a></li>
+            <li><a href="tandco.html">terms and condition</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="shipping.html">shipping</a></li>
+
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>online shop</h4>
+          <ul>
+            <li><a href="diamond.html">Diamond</a></li>
+            <li><a href="sapherie.html">Sapphire</a></li>
+            <li><a href="gold.html">Gold</a></li>
+            <li><a href="pearl.html">Pearl</a></li>
+            <li><a href="titanium.html">Titanium</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelector("#submitPayment").onclick = function() {
+      var confirmation =  confirm("Are you sure you want to proceed?");
+      if(confirmation) {
+        //window.print();
+        var printWindow = window.open("shopping_cart.html", "", "width=1000, height=1000");
+        var scriptTag = printWindow.document.createElement("script");
+        scriptTag.innerText = "window.onload = () => window.print();";
+        printWindow.document.head.appendChild(scriptTag);
+        window.location.replace("end.html");
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
